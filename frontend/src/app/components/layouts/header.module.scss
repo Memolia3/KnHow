@@ -1,8 +1,25 @@
 .header {
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  height: 15vh;
+  background-color: #fff9f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.spacer {
-    flex: 1;
+.logo-container {
+  margin-left: 2%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.center-text {
+  margin-right: 5%;
+  text-align: center;
+}
+
+.right-container {
+  flex: 1;
 }

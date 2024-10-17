@@ -1,6 +1,5 @@
-import Header from "./components/layouts/Header";
 import type { Viewport } from "next";
-import './globals.scss';
+import "./globals.scss";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -44,7 +43,6 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
-        <Header />
         <main>{children}</main>
       </body>
     </html>
