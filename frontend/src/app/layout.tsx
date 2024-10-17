@@ -1,7 +1,15 @@
 import Header from "./components/layouts/Header";
+import type { Viewport } from "next";
+import './globals.scss';
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#171717",
+};
 
 export const metadata = {
-  title: "KnHow / カンホー",
+  title: "KnHow",
   description: "ノウハウ共有ツール",
   openGraph: {
     title: "KnHow / カンホー",
@@ -21,13 +29,11 @@ export const metadata = {
     "programing",
   ],
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1",
   icons: {
     // icon: "/favicon.ico",
     // apple: "/apple-icon.png",
   },
-  themeColor: "#171717",
-//   manifest: "/manifest.json",
+  //   manifest: "/manifest.json",
 };
 
 export default function RootLayout({

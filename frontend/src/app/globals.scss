@@ -1,0 +1,116 @@
+/* ベースとなるフォントサイズとファミリーの設定 */
+html {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* 見出し */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+  font-size: 2rem; /* 32px */
+}
+
+h3 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h6 {
+  font-size: 1.125rem; /* 18px */
+}
+
+/* その他のテキスト要素 */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+small {
+  font-size: 0.875rem; /* 14px */
+}
+
+figcaption {
+  font-size: 0.875rem; /* 14px */
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 1rem;
+}
+
+/* リンク */
+a {
+  color: #0070f3;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2rem; /* 28px */
+  }
+
+  h2 {
+    font-size: 1.75rem; /* 24.5px */
+  }
+
+  h3 {
+    font-size: 1.5rem; /* 21px */
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1.25rem; /* 17.5px */
+  }
+}
+
+/* アクセシビリティ考慮 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
